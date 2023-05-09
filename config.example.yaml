@@ -2,7 +2,7 @@ logging:
   formatter: json
   level: debug
 
-domain: "https://s.lehuipay.com/"
+domain: "https://s.url/"
 
 server:
   grpc:
