@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package fpay.shorturl.api;
+
+option go_package = "github.com/fpay/lehuipay-shorturl-go/api";
+
+service ShortURLService {
+    rpc CreateShortURL(ShortURLRequest) returns (ShortURLResponse) {}
+}
+
+message ShortURLRequest {
+    string url = 1;
+    string custom_name = 2;
+}
+
+message ShortURLResponse {
+    string shorturl = 1;
+}
